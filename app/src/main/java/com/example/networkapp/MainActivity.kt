@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var numberEditText: EditText
     lateinit var showButton: Button
     lateinit var comicImageView: ImageView
-    private lateinit var preferences : SharedPreferences
+
 
     private val internalFilename = "my_file"
     private lateinit var file: File
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        preferences = getPreferences(MODE_PRIVATE)
+
         file = File(filesDir, internalFilename)
         requestQueue = Volley.newRequestQueue(this)
 
